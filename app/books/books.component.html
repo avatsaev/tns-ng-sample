@@ -1,0 +1,42 @@
+
+<ActionBar title="Catalog">
+
+
+</ActionBar>
+
+
+
+<GridLayout rows="*" class="page">
+
+
+
+
+
+  <!--<ActivityIndicator [busy]="isBusy" ></ActivityIndicator>-->
+
+
+
+
+  <!-- <SearchBar >
+
+  </SearchBar> -->
+
+  <ListView [items]="books" class="list-group">
+
+
+    <ListView.itemTemplate >
+
+      <template  let-book="item" >
+
+        <book-item [book]="book"></book-item>
+
+      </template>
+
+    </ListView.itemTemplate>
+
+  </ListView>
+
+
+
+
+</GridLayout>

@@ -1,0 +1,31 @@
+<ActionBar [title]="book.title">
+
+
+</ActionBar>
+
+<GridLayout class="page">
+
+  <ScrollView row="0" orientation="vertical" class="page" >
+
+    <StackLayout paddingBottom="60" orientation="vertical" horizontalAlignment="stretch" class="page">
+
+      <Image [src]="book.coverImage" class="appear-in" marginTop="10" marginBottom="10" horizontalAlignment="center" height="300" stretch ="aspectFit" ></Image>
+      <Label [text]="book.title" textAlignment="center" textWrap="true"></Label>
+
+      <Label [text]="book.details" class="p-15" textWrap="true" marginTop="10"></Label>
+
+
+    </StackLayout>
+
+
+  </ScrollView>
+
+  <GridLayout columns="*,*,*"  backgroundColor="#fff" borderTopColor="#C4C4C4"  borderTopWidth="1" verticalAlignment="bottom" horizontalAlignment="stretch">
+    <Button col="0" (tap)="showInfo()" color="#696969"  class="btn btn-action fa" [text]="'\uf05a'"></Button>
+    <Button  col="1" (tap)="getBook()"  color="#696969" class="btn fa" [text]="'\uf07a'"></Button>
+    <Button col="2" (tap)="shareBook()" color="#696969" class="btn fa" [text]="'\uf064'"></Button>
+
+  </GridLayout>
+
+</GridLayout>
+
